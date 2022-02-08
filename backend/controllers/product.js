@@ -46,9 +46,9 @@ const updateproductById = (req, res) => {
   const { Product_Name, Description, Price } = req.body;
   const id = req.params.id;
 
-  const query = `UPDATE products SET Product_Name=?, Description=? WHERE id=${id};`;
+  const query = `UPDATE products SET Product_Name=?, Description=?  WHERE id= ?;`;
 
-  const data = [Product_Name, Description, Price, id];
+  const data = [Product_Name, Description, id];
 
   connection.query(query, data, (err, results) => {
     if (err) {

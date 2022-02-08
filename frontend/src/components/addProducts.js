@@ -23,9 +23,9 @@ const NewProduct = () => {
 
   const dispatch = useDispatch();
   const [Image, setImage] = useState("");
-  const [url, setUrl] = useState("");
+  // const [url, setUrl] = useState("");
   const [img, setimg] = useState("");
-  const [title, setTitle] = useState("");
+  // const [title, setTitle] = useState("");
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState(false);
   const [Product_Name, setProduct_Name] = useState("");
